@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.jianzhongchen.mymusic.views.ViewGroupHook xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/img_playinfo_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="暂无歌词"
+                android:textColor="#00ff00" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_currenttime_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:text="00:00"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_totaltime_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:text="03:00"
+                    android:textColor="#ffffff" />
+
+                    <!--android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"-->
+                <SeekBar
+                    android:id="@+id/sk_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_totaltime_id"
+                    android:layout_toRightOf="@id/tv_currenttime_id"
+                    android:progressDrawable="@drawable/seekbar_color"
+                    android:thumb="@drawable/img_none"
+                    android:thumbOffset="0dip"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.example.jianzhongchen.mymusic.views.ViewGroupHook>
